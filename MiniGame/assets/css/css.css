@@ -1,0 +1,280 @@
+html {
+  font-size: 100%;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter,
+    monospace;
+}
+
+body {
+  margin: 0;
+}
+
+#principal {
+  background-image: url(background.jpg);
+  width: screen;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  width: 100%;
+  display: flex;
+  height: auto;
+  background-color: black;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  color: lawngreen;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  font-size: 3rem;
+  width: 50%;
+}
+
+.title-name {
+  margin: 0;
+  color: lawngreen;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  font-size: 1rem;
+  width: 25%;
+}
+
+#connect {
+  display: flex;
+  flex-direction: column;
+  width: 25;
+  align-items: flex-end;
+}
+#confirm-down {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+#confirm-up {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+#game-overlay {
+  background-color: black;
+  width: 1300px;
+  height: 700px;
+  margin-top: 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#record-overlay {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#record-title {
+  font-size: 1.5rem;
+  color: lawngreen;
+}
+#record-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.5rem;
+  color: green;
+}
+#timer-overlay {
+  width: 300px;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  align-items: center;
+  color: lawngreen;
+  font-size: 1.5rem;
+}
+#score-button {
+  background-color: black;
+  border: 3px solid lawngreen;
+  color: #eee;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 60px;
+  width: 150px;
+  color: lawngreen;
+}
+
+#game-screen {
+  background-image: url(backgroundscreen\ .jpg);
+  background-repeat: repeat;
+  background-size: 20%;
+  height: 700px;
+  width: 700px;
+}
+#game-screen img {
+  height: 100%;
+  width: 100%;
+}
+
+#game-control {
+  width: 60%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.emptyplace {
+  width: 74px;
+  height: 74px;
+}
+
+.moving {
+  flex-direction: column;
+}
+
+#game-start {
+  background-image: url(start.png);
+  width: 144px;
+  height: 74px;
+}
+#game-up {
+  background-image: url(up.png);
+  width: 74px;
+  height: 74px;
+  margin-left: 84px;
+}
+#game-left {
+  background-image: url(left.png);
+  width: 74px;
+  height: 74px;
+}
+#game-down {
+  background-image: url(down.png);
+  width: 74px;
+  height: 74px;
+}
+#game-right {
+  background-image: url(right.png);
+  width: 74px;
+  height: 74px;
+}
+
+.line-one {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-one div {
+  height: 70px;
+  width: 70px;
+}
+.line-two {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-two div {
+  height: 70px;
+  width: 70px;
+}
+.line-three {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-three div {
+  height: 70px;
+  width: 70px;
+}
+.line-four {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-four div {
+  height: 70px;
+  width: 70px;
+}
+.line-five {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-five div {
+  height: 70px;
+  width: 70px;
+}
+.line-six {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-six div {
+  height: 70px;
+  width: 70px;
+}
+.line-seven {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-seven div {
+  height: 70px;
+  width: 70px;
+}
+.line-eight {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-eight div {
+  height: 70px;
+  width: 70px;
+}
+.line-nine {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-nine div {
+  height: 70px;
+  width: 70px;
+}
+.line-ten {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.line-ten div {
+  height: 70px;
+  width: 70px;
+}
