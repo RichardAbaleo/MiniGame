@@ -1,3 +1,22 @@
+function pressEnter(event) {
+  var code = event.which || event.keyCode;
+  if (code == 13) {
+    startButton();
+  }
+  if (code == 53 || code == 122) {
+    upButton();
+  }
+  if (code == 49 || code == 113) {
+    leftButton();
+  }
+  if (code == 50 || code == 115) {
+    downButton();
+  }
+  if (code == 51 || code == 100) {
+    rightButton();
+  }
+}
+
 var character = [1, 1]; /* x,y */
 var x = Number();
 var y = Number();

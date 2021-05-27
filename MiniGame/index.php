@@ -24,7 +24,7 @@ $record = $row->record;
     <link rel="stylesheet" href="assets/css/css.css" />
     <title>Mini-game</title>
   </head>
-  <body>
+  <body onkeypress="pressEnter(event);">
     <div id="principal">
       <div id="title">
         <h2 class="title-name">by Richard.A</h2>
