@@ -5,7 +5,7 @@ $username = @$_SESSION['username'];
 require "connexion_bdd.php";
 try 
 {
-    if(isset($username)) 
+    if($username == "") 
     {
         $username = "NoName";
         $rq = "INSERT INTO data(username,record) VALUES (:username,:record)";

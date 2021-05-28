@@ -263,6 +263,8 @@ var scoreBest = document.getElementById("score-best");
 var scoreInput = document.getElementById("score-input");
 var scoreButton = document.getElementById("score-button");
 document.getElementById("game-start").addEventListener("click", startButton);
+var audio = new Audio("src/sng/song.mp3");
+var coin = new Audio("src/sng/coin.mp3");
 function startButton() {
   console.log("START");
   if (pause == "finish") {
@@ -278,17 +280,20 @@ function startButton() {
     document.getElementById("game-screen").style = "opacity: 1;";
     timer();
     pointRandom(1, 10);
+    audio.play();
   } else if (pause == true) {
     pause = false;
     document.getElementById("title-name").innerHTML =
       "GET A MAXIMUM OF COINS !";
     document.getElementById("game-screen").style = "opacity: 1;";
     timer();
+    audio.play();
   } else {
     pause = true;
     document.getElementById("title-name").innerHTML = "PAUSE";
     document.getElementById("game-screen").style = "opacity: 0.5;";
     stopTimer();
+    audio.pause();
   }
 }
 document.getElementById("game-up").addEventListener("click", upButton);
@@ -448,5 +453,6 @@ function verifPoint() {
   ) {
     score.innerHTML = Number(score.innerHTML) + 1;
     pointRandom(1, 10);
+    coin.play();
   }
 }
